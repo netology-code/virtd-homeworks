@@ -16,6 +16,8 @@
 
 ## Важно
 
+**Перед началом работы над дипломным заданием изучите [Инструкция по экономии облачных ресурсов](https://github.com/netology-code/devops-materials/blob/master/cloudwork.MD).**
+
 Перед отправкой работы на проверку удаляйте неиспользуемые ресурсы.
 Это нужно, чтобы не расходовать средства, полученные в результате использования промокода.
 
@@ -39,7 +41,7 @@
 
 - [VirtualBox](https://www.virtualbox.org/),
 - [Vagrant](https://github.com/netology-code/devops-materials),
-- [Terraform](https://github.com/netology-code/devops-materials/blob/master/README.md),
+- [Terraform](https://github.com/netology-code/devops-materials/blob/master/README.md)  версии 1.5.Х (1.6.х может вызывать проблемы с яндекс-облаком),
 - Ansible.
 
 *Приложите вывод команд установленных версий каждой из программ, оформленный в Markdown.*
