@@ -68,5 +68,7 @@ Error: The requested URL returned error: 404:
 1. Скачайте с [сайта](https://app.vagrantup.com/bento/boxes/ubuntu-20.04) файл-образ "bento/ubuntu-20.04".
 2. Добавьте его в список образов Vagrant: "vagrant box add bento/ubuntu-20.04 <путь к файлу>".
 
-*Приложите скриншоты в качестве решения на эту задачу.*
+Важно!: Если ваша хостовая рабочая станиця - это windows ОС, то у вас могут возникнуть проблемы со вложенной виртуализацией. https://www.comss.ru/page.php?id=7726 . Если вы устанавливали hyper-v или docker desktop то может все равно возникать ошибка: Stderr: VBoxManage: error: AMD-V VT-X is not available (VERR_SVM_NO_SVM) . Попробуйте в этом случае выполнить в windows от администратора команду: "bcdedit /set hypervisorlaunchtype off" и перезагрузиться
+
+*Приложите скриншоты в качестве решения на эту задачу. Допускается неполное выполнение данного задания если не сможете совладать с Windows. * 
 
