@@ -37,7 +37,7 @@
 
 ## Задача 3
 
-Установите на личный компьютер:
+Установите на личный linux-компьютер(или учебную ВМ с linux):
 
 - [VirtualBox](https://www.virtualbox.org/),
 - [Vagrant](https://github.com/netology-code/devops-materials), рекомендуем версию 2.3.4(старшие версии могут возникать проблемы интеграции с ansible)
