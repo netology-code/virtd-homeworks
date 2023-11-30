@@ -12,8 +12,6 @@
 Любые вопросы по решению задач задавайте в чате учебной группы.
 
 ---
-
-
 ## Важно
 
 **Перед началом работы над дипломным заданием изучите [Инструкция по экономии облачных ресурсов](https://github.com/netology-code/devops-materials/blob/master/cloudwork.MD).**
@@ -26,38 +24,22 @@
 ---
 
 ## Задача 1
-
-- Опишите основные преимущества применения на практике IaaC-паттернов.
-- Какой из принципов IaaC является основополагающим?
-
-## Задача 2
-
-- Чем Ansible выгодно отличается от других систем управление конфигурациями?
-- Какой, на ваш взгляд, метод работы систем конфигурации более надёжный — push или pull?
-
-## Задача 3
-
-Установите на личный linux-компьютер(или учебную ВМ с linux):
+Установите на личный linux-компьютер или учебную **локальную** ВМ с linux(облачная ВМ не подойдет):
 
 - [VirtualBox](https://www.virtualbox.org/),
-- [Vagrant](https://github.com/netology-code/devops-materials), рекомендуем версию 2.3.4(старшие версии могут возникать проблемы интеграции с ansible)
-- [Terraform](https://github.com/netology-code/devops-materials/blob/master/README.md)  версии 1.5.Х (1.6.х может вызывать проблемы с яндекс-облаком),
-- Ansible.
+- [Vagrant](https://github.com/netology-code/devops-materials), рекомендуем версию 2.3.4
+- [packer](https://github.com/netology-code/devops-materials/blob/master/README.md) + плагин от Яндекс-облако по [инструкции](https://cloud.yandex.ru/docs/tutorials/infrastructure-management/packer-quickstart)
 
-*Приложите вывод команд установленных версий каждой из программ, оформленный в Markdown.*
 
-## Задача 4 
-
-Воспроизведите практическую часть лекции самостоятельно.
-
-- Создайте виртуальную машину.
+## Задача 2
+- Создайте виртуальную машину Virtualbox с помощью Vagrant.
 - Зайдите внутрь ВМ, убедитесь, что Docker установлен с помощью команды
 ```
-docker ps,
+docker version && docker compose version
 ```
-Vagrantfile из лекции и код ansible находятся в [папке](https://github.com/netology-code/virt-homeworks/tree/virt-11/05-virt-02-iaac/src).
+Vagrantfile находятся в [папке](https://github.com/netology-code/virt-homeworks/tree/virt-11/05-virt-02-iaac/src).
 
-Примечание. Если Vagrant выдаёт ошибку:
+Примечание. Если Vagrant выдаёт ошибку(блокировка трафика):
 ```
 URL: ["https://vagrantcloud.com/bento/ubuntu-20.04"]     
 Error: The requested URL returned error: 404:
@@ -70,5 +52,10 @@ Error: The requested URL returned error: 404:
 
 Важно!: Если ваша хостовая рабочая станция - это windows ОС, то у вас могут возникнуть проблемы со вложенной виртуализацией.  [способы решения](https://www.comss.ru/page.php?id=7726)  . Если вы устанавливали hyper-v или docker desktop то  все равно может возникать ошибка: Stderr: VBoxManage: error: AMD-V VT-X is not available (VERR_SVM_NO_SVM) . Попробуйте в этом случае выполнить в windows от администратора команду: "bcdedit /set hypervisorlaunchtype off" и перезагрузиться
 
-***Приложите скриншоты в качестве решения на эту задачу. Допускается неполное выполнение данного задания если не сможете совладать с Windows.*** 
-
+## Задача 3
+- Отредактируйте файл mydebian.json в директории src. Ваша задача добавить в скрипт установку docker(возьмите готовый скрипт из Vagrantfile). Так же установите в данном образе htop и tmux.
+- Найдите свой образ в web консоли или с помощью yc tool.
+- Создайте новую ВМ(минимальные параметры) в облаке, используя данный образ. 
+- Подключитесь по ssh и убедитесь в наличии установленного docker.
+- Удалите ВМ и образ.
+- ВНИМАНИЕ!!! Никогда не выкладываете oauth token в git-репозиторий! После выполнения задания обязательно удалите секретные данные из файла mydebian.json!!!
