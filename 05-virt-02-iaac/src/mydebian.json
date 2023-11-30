@@ -5,7 +5,7 @@
             "token": "y0_AgAAAAA...это точно секретные данные!",
             "folder_id": "b1gfu..не секретные данные",
             "zone": "ru-central1-a",
-            "image_name": "debian-11-nginx-{{isotime | clean_resource_name}}",
+            "image_name": "debian-11-docker",
             "image_description": "my custom debian with docker",
             "source_image_family": "debian-11",
             "subnet_id": "e9bhm45v9j5tna68jf9n...совсем не секретные данные",
