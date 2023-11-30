@@ -28,7 +28,7 @@
 
 - [VirtualBox](https://www.virtualbox.org/),
 - [Vagrant](https://github.com/netology-code/devops-materials), рекомендуем версию 2.3.4
-- [packer](https://github.com/netology-code/devops-materials/blob/master/README.md) + плагин от Яндекс-облако по [инструкции](https://cloud.yandex.ru/docs/tutorials/infrastructure-management/packer-quickstart)
+- [packer](https://github.com/netology-code/devops-materials/blob/master/README.md) версии 1.9.х + плагин от Яндекс-облако по [инструкции](https://cloud.yandex.ru/docs/tutorials/infrastructure-management/packer-quickstart)
 
 
 ## Задача 2
@@ -37,7 +37,7 @@
 ```
 docker version && docker compose version
 ```
-Vagrantfile находятся в [папке](https://github.com/netology-code/virt-homeworks/tree/virt-11/05-virt-02-iaac/src).
+Vagrantfile находятся в [директории](https://github.com/netology-code/virt-homeworks/tree/virt-11/05-virt-02-iaac/src).
 
 Примечание. Если Vagrant выдаёт ошибку(блокировка трафика):
 ```
@@ -58,4 +58,4 @@ Error: The requested URL returned error: 404:
 - Создайте новую ВМ(минимальные параметры) в облаке, используя данный образ. 
 - Подключитесь по ssh и убедитесь в наличии установленного docker.
 - Удалите ВМ и образ.
-- ВНИМАНИЕ!!! Никогда не выкладываете oauth token в git-репозиторий! После выполнения задания обязательно удалите секретные данные из файла mydebian.json!!!
+- ВНИМАНИЕ!!! Никогда не выкладываете oauth token в git-репозиторий! После выполнения задания обязательно удалите секретные данные из файла mydebian.json и mydebian.json.pkr.hcl!!!
