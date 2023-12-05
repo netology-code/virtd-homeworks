@@ -27,7 +27,7 @@
 
 - [VirtualBox](https://www.virtualbox.org/),
 - [Vagrant](https://github.com/netology-code/devops-materials), рекомендуем версию 2.3.4
-- [packer](https://github.com/netology-code/devops-materials/blob/master/README.md) версии 1.9.х + плагин от Яндекс-облако по [инструкции](https://cloud.yandex.ru/docs/tutorials/infrastructure-management/packer-quickstart)
+- [Packer](https://github.com/netology-code/devops-materials/blob/master/README.md) версии 1.9.х + плагин от Яндекс Облако по [инструкции](https://cloud.yandex.ru/docs/tutorials/infrastructure-management/packer-quickstart)
 
 Примечание: Облачная ВМ с Linux в данной задаче не подойдёт.
 
