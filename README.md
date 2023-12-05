@@ -12,7 +12,7 @@
 
 2. [Применение принципов IaaC в работе с виртуальными машинами](05-virt-02-iaac)
 
-3. [Введение в Docker](05-virt-03-docker)
+3. Введение в Docker
 
 4. [Оркестрация группой Docker контейнеров на примере Docker Compose.](05-virt-04-docker-compose)
 
