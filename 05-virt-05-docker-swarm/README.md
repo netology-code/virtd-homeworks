@@ -11,7 +11,7 @@
 Это нужно, чтобы не расходовать средства, полученные в результате использования промокода.
 Подробные рекомендации [здесь](https://github.com/netology-code/virt-homeworks/blob/virt-11/r/README.md).
 
-2. [Ссылки для установки открытого ПО](https://github.com/netology-code/devops-materials/blob/master/README.md).
+[Ссылки для установки открытого ПО](https://github.com/netology-code/devops-materials/blob/master/README.md).
 
 ---
 
