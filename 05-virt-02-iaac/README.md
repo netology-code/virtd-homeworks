@@ -18,13 +18,13 @@
 
    
 ## Задача 1
-Установите на личный Linux-компьютер или учебную **локальную** ВМ с Linux следующие сервисы:
+Установите на личный Linux-компьютер или учебную **локальную** ВМ с Linux следующие сервисы(желательно ОС ubuntu 20.04):
 
 - [VirtualBox](https://www.virtualbox.org/),
 - [Vagrant](https://github.com/netology-code/devops-materials), рекомендуем версию 2.3.4
 - [Packer](https://github.com/netology-code/devops-materials/blob/master/README.md) версии 1.9.х + плагин от Яндекс Облако по [инструкции](https://cloud.yandex.ru/docs/tutorials/infrastructure-management/packer-quickstart)
 
-Примечание: Облачная ВМ с Linux в данной задаче не подойдёт.
+Примечание: Облачная ВМ с Linux в данной задаче не подойдёт из-за ограничений облачного провайдера.
 
 ## Задача 2
 
