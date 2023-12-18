@@ -24,7 +24,7 @@
 - [Vagrant](https://github.com/netology-code/devops-materials), рекомендуем версию 2.3.4
 - [Packer](https://github.com/netology-code/devops-materials/blob/master/README.md) версии 1.9.х + плагин от Яндекс Облако по [инструкции](https://cloud.yandex.ru/docs/tutorials/infrastructure-management/packer-quickstart)
 
-Примечание: Облачная ВМ с Linux в данной задаче не подойдёт из-за ограничений облачного провайдера.
+Примечание: Облачная ВМ с Linux в данной задаче не подойдёт из-за ограничений облачного провайдера. У вас просто не установится virtualbox.
 
 ## Задача 2
 
