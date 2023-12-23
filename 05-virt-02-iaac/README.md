@@ -35,8 +35,6 @@
 docker version && docker compose version
 ```
 
-Примечание: Vagrantfile находятся в [директории](https://github.com/netology-code/virt-homeworks/tree/virt-11/05-virt-02-iaac/src).
-
 3. Если Vagrant выдаёт ошибку (блокировка трафика):
 ```
 URL: ["https://vagrantcloud.com/bento/ubuntu-20.04"]     
