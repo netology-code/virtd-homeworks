@@ -7,6 +7,9 @@
 4. В личном кабинете отправьте на проверку ссылку на .md-файл в вашем репозитории.
 
 ---
+## Примечание: Ознакомьтесь со схемой виртуального стенда в [файле](https://github.com/netology-code/shvirtd-example-python/blob/main/schema.pdf)
+
+---
 
 ## Задача 1
 1. Сделайте fork репозитория ```https://github.com/netology-code/shvirtd-example-python/blob/main/README.md```.   
