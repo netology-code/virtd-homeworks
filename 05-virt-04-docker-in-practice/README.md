@@ -7,7 +7,7 @@
 4. В личном кабинете отправьте на проверку ссылку на .md-файл в вашем репозитории.
 
 ---
-## Примечание: Ознакомьтесь со схемой виртуального стенда в [файле](https://github.com/netology-code/shvirtd-example-python/blob/main/schema.pdf)
+## Примечание: Ознакомьтесь со схемой виртуального стенда в [файле](https://github.com/netology-code/virtd-homeworks/blob/shvirtd-1/05-virt-04-docker-in-practice/schema.pdf)
 
 ---
 
