@@ -95,7 +95,8 @@ services:
     - "5000:5000"
 ```
 
-И выполните команду "docker compose up -d".
+И выполните команду "docker compose up -d". Какой из файлов был запущен и почему? (https://docs.docker.com/compose/compose-file/03-compose-file/)
+Отредактируйте файл compose.yaml так, чтобы были запущенный оба файла(https://docs.docker.com/compose/compose-file/14-include/)
 
 2. Выполните в консоли вашей хостовой ОС необходимые команды чтобы залить образ custom-nginx как custom-nginx:latest в запущенное вами, локальное registry. Дополнительная документация: https://distribution.github.io/distribution/about/deploying/
 3. Откройте страницу "https://127.0.0.1:9000" и произведите начальную настройку portainer.(логин и пароль адмнистратора)
