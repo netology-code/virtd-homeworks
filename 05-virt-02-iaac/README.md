@@ -55,7 +55,7 @@ Error: The requested URL returned error: 404:
 
 ## Задача 3
 
-1. Отредактируйте файл mydebian.json или mydebian.json.pkr.hcl в директории src (packer умеет и в json, и в hcl форматы):
+1. Отредактируйте файл    [mydebian.json](https://github.com/netology-code/virtd-homeworks/blob/shvirtd-1/05-virt-02-iaac/src/mydebian.json) или  [mydebian.json.pkr.hcl](https://github.com/netology-code/virtd-homeworks/blob/shvirtd-1/05-virt-02-iaac/src/mydebian.json.pkr.hcl)  в директории src (packer умеет и в json, и в hcl форматы):
    - добавьте в скрипт установку docker (возьмите готовый bash-скрипт из Vagrantfile или документации к docker),
    - установите в данном образе htop и tmux.
 3. Найдите свой образ в web консоли yandex_cloud  или с помощью утилиты командной строки "yc tool".
