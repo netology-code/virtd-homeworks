@@ -1,0 +1,16 @@
+version: "3.3"
+x-deploy: &deploy-prod
+  deploy:
+    resources:
+      limits:
+        cpus: "1"
+        memory: 512M
+      reservations:
+        memory: 256M
+services:
+  db:
+    <<: [ *deploy-prod]
+  ubuntu:
+    network_mode: host
+    build:
+      context: .

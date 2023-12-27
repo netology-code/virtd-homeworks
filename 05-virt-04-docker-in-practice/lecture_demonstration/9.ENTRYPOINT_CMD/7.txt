@@ -1,0 +1,12 @@
+#Shell vs. Exec Form
+
+ENTRYPOINT ["/bin/ping", "ya.ru"]  #exec#  запускает command arg без  создания оболочки (sh, bash, zsh) 
+ENTRYPOINT /bin/ping ya.ru  #shell# запускает команду в виде /bin/sh -c 'command arg';
+
+CMD ["/bin/ping", "ya.ru"]  #exec#  запускает command arg без  создания оболочки (sh, bash, zsh)
+CMD /bin/ping ya.ru  #shell#  запускает команду в виде /bin/sh -c 'command arg';
+
+If CMD is defined from the base image, setting ENTRYPOINT will reset CMD to an empty value. In this scenario, CMD must be defined in the current image to have a value.
+
+Делать комбинацию exec vs shell не стоит!
+https://docs.docker.com/engine/reference/builder/#understand-how-cmd-and-entrypoint-interact

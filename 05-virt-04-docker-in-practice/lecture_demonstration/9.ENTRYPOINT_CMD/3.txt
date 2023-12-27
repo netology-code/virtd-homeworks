@@ -1,0 +1,13 @@
+#Если не указать CMD or ENTRYPOINT то просто вызывается последний  CMD  или ENTRYPOINT из FROM образа.
+
+#Docker has a default entrypoint which is "/bin/sh -c" , default command is "bash".
+# Вспомните docker run -it nginx bash
+
+#Можно указать или CMD или ENTRYPOINT - разницы в этом случае нет
+
+#CMD легко перезаписать!
+docker run --rm --name  test_entry_cmd_1 test_entry_cmd_1 ping netology.ru
+
+#Перезаписать ENTRYPOINT чутка сложнее!
+
+docker run --rm --name  test_entry_cmd_1 --entrypoint "ping"  test_entry_cmd_1 "stackoverflow.com"
