@@ -8,7 +8,7 @@
 5. Сопроводите ответ необходимыми скриншотами.
 
 ---
-## Примечание: Ознакомьтесь со схемой виртуального стенда [по ссылке](https://github.com/netology-code/virtd-homeworks/blob/shvirtd-1/05-virt-04-docker-in-practice/schema.pdf)
+## Примечание: Ознакомьтесь со схемой виртуального стенда [по ссылке](https://github.com/netology-code/shvirtd-example-python/blob/main/schema.pdf)
 
 ---
 
