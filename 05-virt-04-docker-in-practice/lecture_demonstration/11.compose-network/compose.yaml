@@ -7,7 +7,7 @@ x-deploy: &deploy-dev
         cpus: "1"
         memory: 512M
       reservations:
-        memory: 128M
+        memory: 256M
 x-env_file: &env_file
   env_file:
     - .env
@@ -21,7 +21,6 @@ services:
     volumes:
       - db_data:/var/lib/mysql
     networks: ["wordpress"]
-    ports: ["127.0.0.1:3306:3306"]
     <<: [*deploy-dev, *env_file, *restart]
     environment:
       - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
@@ -29,13 +28,12 @@ services:
       - MYSQL_USER=wordpress
       - MYSQL_PASSWORD=${MYSQL_PASSWORD}
       - MYSQL_ROOT_HOST="%"
+
   wordpress:
     depends_on: ["mysql"]
     image: wordpress:php8.2-apache
     volumes:
       - wp_data:/var/www/html
-    ports:
-      - 80:80
     networks: ["wordpress"]
     <<: [*deploy-dev, *env_file, *restart]
     environment:
@@ -52,10 +50,14 @@ services:
       interval: 10s
       timeout: 5s
       retries: 2
-  nginx:
 
+  nginx:
     build:
-      context: /opt/
+      context: .
+      dockerfile: nginx.dockerfile
+    depends_on: ["mysql"]
+    ports: ["80:80"]
+    networks: ["wordpress"]
 
 
 
