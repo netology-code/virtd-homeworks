@@ -18,8 +18,6 @@ services:
   mysql:
     image: mariadb:10.6.4-focal
     command: "--default-authentication-plugin=mysql_native_password"
-    volumes:
-      - db_data:/var/lib/mysql
     networks: ["wordpress"]
     <<: [*deploy-dev, *env_file, *restart]
     environment:
@@ -32,8 +30,6 @@ services:
   wordpress:
     depends_on: ["mysql"]
     image: wordpress:php8.2-apache
-    volumes:
-      - wp_data:/var/www/html
     networks: ["wordpress"]
     <<: [*deploy-dev, *env_file, *restart]
     environment:
