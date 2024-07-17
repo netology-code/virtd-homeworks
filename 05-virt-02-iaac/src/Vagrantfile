@@ -1,3 +1,4 @@
+##Обратите внимание!! Скрипт установки docker рассчитан на ubuntu-20.04
 ISO = "bento/ubuntu-20.04"
 NET = "192.168.56."
 DOMAIN = ".netology"
