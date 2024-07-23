@@ -28,7 +28,7 @@ services:
       - MYSQL_DATABASE=wordpress
       - MYSQL_USER=wordpress
       - MYSQL_PASSWORD=${MYSQL_PASSWORD}
-      - MYSQL_ROOT_HOST="%"
+      - MYSQL_ROOT_HOST="%" # it's very important!!!
 
   wordpress:
     depends_on: ["mysql"]
