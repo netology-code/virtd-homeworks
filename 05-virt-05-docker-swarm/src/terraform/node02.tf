@@ -5,15 +5,15 @@ resource "yandex_compute_instance" "node02" {
   allow_stopping_for_update = true
 
   resources {
-    cores  = 4
-    memory = 8
+    cores  = 2
+    memory = 4
   }
 
   boot_disk {
     initialize_params {
-      image_id    = "${var.centos-7-base}"
+      image_id    = "${var.ubuntu_2204_lts}"
       name        = "root-node02"
-      type        = "network-nvme"
+      type        = "network-hdd"
       size        = "10"
     }
   }
@@ -25,6 +25,6 @@ resource "yandex_compute_instance" "node02" {
   }
 
   metadata = {
-    ssh-keys = "centos:${file("~/.ssh/id_rsa.pub")}"
+    ssh-keys = "ubuntu:${file("~/.ssh/id_ed25519.pub")}"
   }
 }

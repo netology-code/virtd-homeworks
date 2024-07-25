@@ -2,7 +2,7 @@ FROM ubuntu
 RUN apt update && apt install -y iputils-ping psmisc
 
 
-#ENTRYPOINT /bin/ping ya.ru  
+#ENTRYPOINT ["/bin/ping", "ya.ru"  ]
 
 #CMD /bin/ping ya.ru  #разницы не будет
 

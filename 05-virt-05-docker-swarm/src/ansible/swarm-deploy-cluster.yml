@@ -3,7 +3,7 @@
     hosts: nodes
     become: yes
     become_user: root
-    remote_user: centos
+    remote_user: ubuntu
     roles:
       - install-tools
       - configure-hosts-file
@@ -12,7 +12,7 @@
     hosts: nodes
     become: yes
     become_user: root
-    remote_user: centos
+    remote_user: ubuntu
     roles:
       - docker-installation
 
@@ -20,7 +20,7 @@
     hosts: active
     become: yes
     become_user: root
-    remote_user: centos
+    remote_user: ubuntu
     roles:
       - docker-swarm-init
 
@@ -28,7 +28,7 @@
     hosts: standby
     become: yes
     become_user: root
-    remote_user: centos
+    remote_user: ubuntu
     roles:
       - docker-swarm-add-manager
 
@@ -36,6 +36,6 @@
     hosts: workers
     become: yes
     become_user: root
-    remote_user: centos
+    remote_user: ubuntu
     roles:
       - docker-swarm-add-worker

@@ -1,13 +1,13 @@
 {
   "builders": [
     {
-      "disk_type": "network-nvme",
+      "disk_type": "network-hdd",
       "folder_id": "",
       "image_description": "by packer",
       "image_family": "centos",
-      "image_name": "centos-7-base",
-      "source_image_family": "centos-7",
-      "ssh_username": "centos",
+      "image_name": "ubuntu-22-04",
+      "source_image_family": "ubuntu-22-04-lts",
+      "ssh_username": "ubuntu",
       "subnet_id": "",
       "token": "",
       "type": "yandex",

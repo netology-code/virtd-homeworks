@@ -2,7 +2,7 @@
   - hosts: nodes
     become: yes
     become_user: root
-    remote_user: centos
+    remote_user: ubuntu
 
     tasks:
       - name: Check Current Leader
