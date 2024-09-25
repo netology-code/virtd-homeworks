@@ -21,3 +21,7 @@ ID      ID      STATUS    BUNDLE                 CREATED  OWNER
 nginx   124495  running   /root/test_runc/nginx  11:49    root
 
 runc kill nginx && runc delete nginx
+
+
+
+sudo runc --root /run/docker/runtime-runc/moby/ list
