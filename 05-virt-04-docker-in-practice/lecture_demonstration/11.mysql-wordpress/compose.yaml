@@ -19,8 +19,6 @@ services:
     image: mariadb:10.6.4-focal
     #"mysql_native_password" only for wordpress, usually don't need!
     command: "--default-authentication-plugin=mysql_native_password"  # <--- При выполнени домашнего задания не использовать!!
-    volumes:
-      - db_data:/var/lib/mysql
     networks: ["wordpress"]
     <<: [*deploy-dev, *env_file, *restart]
     environment:
